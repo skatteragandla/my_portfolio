@@ -30,7 +30,6 @@
         headerToggle();
       }
     });
-
   });
 
   /**
@@ -221,9 +220,25 @@
       } else {
         navmenulink.classList.remove('active');
       }
-    })
+    });
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Smooth Scrolling for "Hire Me!" Button
+   */
+  const hireMeBtn = document.querySelector(".hire-me-btn");
+  if (hireMeBtn) {
+    hireMeBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const contactSection = document.querySelector("#contact");
+      if (contactSection) {
+        contactSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    });
+  }
 })();
