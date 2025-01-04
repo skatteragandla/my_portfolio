@@ -635,6 +635,26 @@ section,
   }
 }
 
+.hire-me-btn {
+  display: inline-block;
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 50px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.hire-me-btn:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+  color: var(--contrast-color);
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
